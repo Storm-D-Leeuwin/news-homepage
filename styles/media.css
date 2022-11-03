@@ -1,0 +1,33 @@
+@media (max-width : 700px) {
+    #normal-navbar {
+        display: none;
+    }
+
+    #burger-navbar {
+        display: block;
+    }
+
+    .article-container-main {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .new-container-main {
+        width: 100%;
+        min-height: 400px;
+    }
+}
+
+@media (max-width : 375px) {
+    .banner-img {
+        display: none;
+    }
+
+    .banner-img-mobile {
+        display: block;
+    }
+
+    .banner-content { 
+        flex-direction: column;
+    }
+}
