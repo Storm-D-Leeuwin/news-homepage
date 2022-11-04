@@ -22,9 +22,14 @@
 }
 
 .suggestion-container {
-    background-color: green;
-    min-height: 150px;
+    height: 0;
+    background-color: aqua;
     max-width: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #normal-navbar {
@@ -33,6 +38,7 @@
 
 .navbar-item {
     padding: 0 12px;
+    cursor: pointer;
 }
 
 .navbar-item h4{
@@ -45,27 +51,25 @@
 
 .article-container-main {
     position: relative;
-    min-width: 60%;
+    max-width: 60%;
     min-height: 400px;
 
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
 }
 
 .new-container-main {
     position: relative;
-    min-width: 35%;
+    max-width: 35%;
     min-height: 400px;
 
-    background-color: blue;
+    background-color: hsl(240, 100%, 5%);
     display: flex;
 }
 
 .banner {
     width: 100%;
     height: 240px;
-    background-color: lightblue;
 }
 
 .banner-img {
@@ -81,14 +85,12 @@
 
 .banner-content {
     min-height: 160px;
-    width: 100%;
-    background-color: lightseagreen;
+    max-width: 100%;
 
     display: flex;
 }
 
 .title {
-    background-color: white;
     min-width: 50%;
     min-height: 160px;
 
@@ -102,7 +104,96 @@
 }
 
 .readmore-content {
-    background-color: lightcoral;
     min-width: 50%;
     min-height: 160px;
+}
+
+.description p{
+    font-size: 12px;
+    max-width: 100%;
+}
+
+.description {
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+.readmore-btn {
+    background-color: lightcoral;
+    padding: 10px 20px;
+    max-width: fit-content;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.new-articles {
+    min-width: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.new-title h1 {
+    color: hsl(35, 77%, 62%);
+    padding-bottom: 20px;
+}
+
+.new-article-item {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+
+    min-height: 20px;
+}
+
+.new-article-title {
+    color: hsl(36, 100%, 99%);
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+
+.new-article-description {
+    color: hsl(236, 13%, 42%);
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+#item2, #item3 {
+    padding-top: 15px;
+}
+
+.suggestion-item {
+    max-height: max-content;
+
+    display: flex;
+}
+
+.sug-banner-img {
+    height: 50%;
+}
+
+.sug-text {
+    display: flex;
+    flex-direction: column;
+
+    max-width: fit-content;
+    padding-left: 20px;
+}
+
+.sug-nummer {
+    padding-bottom: 10px;
+    color: hsl(236, 13%, 42%);
+}
+
+.sug-text h5{
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+.sug-text h6 {
+    line-height: 20px;
+    color: hsl(236, 13%, 42%);
+    max-width: fit-content;
 }
