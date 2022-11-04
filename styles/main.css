@@ -23,8 +23,7 @@
 
 .suggestion-container {
     height: 0;
-    background-color: aqua;
-    max-width: 100%;
+    max-width: fit-content;
     margin-top: 20px;
 
     display: flex;
